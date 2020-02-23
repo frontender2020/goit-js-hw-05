@@ -8,11 +8,14 @@ class Storage {
   }
 
   addItem() {
-    return this.items.push("Дроид");
+    this.items.push("Дроид");
   }
 
   removeItem() {
-    return this.items.splice(1, 1);
+    if (this.items.includes("Пролонгер")) {
+      this.items.indexOf("Пролонгер");
+    }
+    this.items.splice(1, 1);
   }
 }
 
