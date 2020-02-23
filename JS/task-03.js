@@ -7,15 +7,15 @@ class Storage {
     return this.items;
   }
 
-  addItem() {
-    this.items.push("Дроид");
+  addItem(item) {
+    this.items.push(item);
   }
 
-  removeItem() {
-    if (this.items.includes("Пролонгер")) {
-      this.items.indexOf("Пролонгер");
+  removeItem(item) {
+    if (this.items.includes(item)) {
+      this.items.indexOf(item);
+      this.items.splice(1, 1);
     }
-    this.items.splice(1, 1);
   }
 }
 

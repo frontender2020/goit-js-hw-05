@@ -31,14 +31,14 @@ class Car {
   accelerate(value) {
     let resSpeed = this.speed + value;
     if (resSpeed <= this.maxSpeed) {
-      this.speed = this.speed + value;
+      this.speed = resSpeed;
     }
   }
 
   decelerate(value) {
     let resSpeed = this.speed - value;
     if (resSpeed >= 0) {
-      this.speed = this.speed - value;
+      this.speed = resSpeed;
     }
   }
 
